@@ -1,0 +1,23 @@
+@import "./themes.scss";
+
+.text-danger {
+  color: $danger !important;
+}
+
+.content__rule_list {
+  // list-style-type: none;
+  margin: 0;
+  margin-bottom: 1.5rem;
+  li {
+    font-size: 1.125rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+.content__description {
+  margin-bottom: 1.125rem;
+  &.compact {
+    padding: 0 1rem;
+    text-align: left;
+  }
+}

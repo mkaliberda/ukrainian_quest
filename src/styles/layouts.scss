@@ -1,0 +1,19 @@
+.layouts__app-container {
+  box-sizing: border-box;
+  min-height: calc(100vh);
+  width: 100%;
+  background-color: #706D6B;
+  display: flex;
+  justify-content: center;
+  .layouts__app-container-wrapper {
+    min-height: 100%;
+    width: 100%;
+    max-width: 600px;
+    background: #ffff;
+  }
+}
+
+.layouts__page-container {
+  padding: 1rem;
+}
+
