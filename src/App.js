@@ -10,7 +10,6 @@ import Point from "containers/Point";
 import Symbol from "containers/Symbol";
 import SymbolList from "containers/SymbolList";
 import ScrollToTop from "componets/ScrollToTop";
-import { CssVarsProvider } from "@mui/joy/styles";
 
 import { store, persistor } from "store";
 
@@ -21,17 +20,15 @@ const App = () => {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <AppContainer>
-          <CssVarsProvider>
-            <BrowserRouter>
-              <ScrollToTop />
-              <Routes>
-                <Route path={ROUTES.HOME.path} element={<Home />}></Route>
-                <Route path={ROUTES.POINT.path} element={<Point />}></Route>
-                <Route path={ROUTES.SYMBOL.path} element={<Symbol />}></Route>
-                <Route path={ROUTES.COLLECTED_SYMBOLS.path} element={<SymbolList />}></Route>
-              </Routes>
-            </BrowserRouter>
-          </CssVarsProvider>
+          <BrowserRouter>
+            <ScrollToTop />
+            <Routes>
+              <Route path={ROUTES.HOME.path} element={<Home />}></Route>
+              <Route path={ROUTES.POINT.path} element={<Point />}></Route>
+              <Route path={ROUTES.SYMBOL.path} element={<Symbol />}></Route>
+              <Route path={ROUTES.COLLECTED_SYMBOLS.path} element={<SymbolList />}></Route>
+            </Routes>
+          </BrowserRouter>
         </AppContainer>
       </PersistGate>
     </Provider>
