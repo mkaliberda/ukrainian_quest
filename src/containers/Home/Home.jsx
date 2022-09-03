@@ -41,7 +41,6 @@ const Home = ({ pointListWithRoutes, collectedSymbols = [], rules = [] }) => {
               size="lg"
               key={pointEl.lookup}
               variant={index % 2 ? "primary" : "warning"}
-              href={pointEl.routePath}
               onFocus={(e) => e.preventDefault}
               onClick={(_e) => handleNavigate(pointEl.routePath)}
             >
