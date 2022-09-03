@@ -131,7 +131,7 @@ const data = {
       img: imgLviv,
       type: QUEST_POINT_TYPES.KEYWORD,
       rules: [
-        "Ring toss game: toss the rings onto the target cones and the bean bags. Check caught targets to find the word",
+        "Bean bags toss game: each team member should toss the bean bag to the hole to reveal the word.",
         "Enter this word into the field and click 'Submit'",
         "Receive your final symbol",
       ],
